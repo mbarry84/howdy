@@ -21,7 +21,10 @@
 	$f3->route('GET /',
 		function()
 		{
-			echo '<h1>Howdy, world!</h1>';
+			//echo '<h1>Howdy, world!</h1>';
+
+			$view = new View;
+			echo $view->render('views/home.html');
 		}
 	);
 
